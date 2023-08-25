@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+#root{
+	
+	text-size-adjust: 100%;
+	letter-spacing: normal;
+	background-color: #dddd;
+	margin: 0 auto;
+	width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+	box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main_heading{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.heading{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.text_list{
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.Total_text{
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.Total_prgh{
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+button{
+  border: none;
+background: none;
+}
+.cart{
+border-radius: 50px !important;
+}
+.cart_list{
+  background: #ffffff;
+  border-top-left-radius:15px ;
+  border-bottom-left-radius: 15px;
+}
+.cart_total{
+  background: #eae8e8;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.select_custom{
+  border: none !important;
+  outline: none !important;
+  width: 100%;
+  height: 5vh;
+}
+.input_custom{
+  border: none !important;
+  outline: none !important;
+  width: 100%;
+  height: 5vh;
+}
+@media (max-width: 767px) {
+  .cart_list {
+    border-top-right-radius: 15px ;
+    border-top-left-radius: 15px ; 
+    border-bottom-left-radius: 0px
+  };
+  .cart_total{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 15px ;
+    border-bottom-left-radius: 15px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .input_custom{
+  border: none !important;
+} */
